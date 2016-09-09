@@ -1,0 +1,9 @@
+#!bin/bash
+sed -i 's|105|106|' /etc/sysconfig/network-scripts/ifcfg-eth0
+
+hostnamectl set-hostname server6.example.com
+#echo -e 'HOSTNAME=server11.example.com' >/etc/sysconfig/network
+echo -e '127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4\n::1         localhost localhost.localdomain\nlocalhost6 localhost6.localdomain6\n192.168.122.101 server1.example.com\n192.168.122.102 server2.example.com\n192.168.122.103 server3.example.com\n192.168.122.104 server4.example.com\n192.168.122.105 server5.example.com\n192.168.122.106 server6.example.com\n192.168.122.107 server7.example.com\n192.168.122.108 server8.example.com\n192.168.122.109 server9.example.com\n192.168.122.110 server10.example.com\n192.168.122.111 server11.example.com\n192.168.122.112 server12.example.com\n192.168.122.1  foundation.example.com' >/etc/hosts
+
+rm -fr /etc/udev/rules.d/*
+service network  restart
