@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p 'input small='  tt
+read -p 'input big='  bb
+echo `seq $tt $bb`|tr " " "+"|bc 
+#echo `seq -s + $tt $bb | bc 

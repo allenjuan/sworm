@@ -1,0 +1,8 @@
+# cat talk
+echo "who are you?"
+read a1
+echo "hello, $a1"
+echo "are you happy?"
+read a2
+echo "why?"
+read a3

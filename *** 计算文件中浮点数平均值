@@ -1,0 +1,2 @@
+awk 'BEGIN{total = 0;len = 0} {if($1~/^[0-9]+\.[0-9]*/){total += $1; len++}} END{print total/len}' num
+#

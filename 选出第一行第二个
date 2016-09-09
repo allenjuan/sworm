@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -n 1p num | awk -F ' ' '{print $2}'

@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+set timeout 1
+spawn ./talk
+expect "who"
+send "Tom\n"
+expect "happy?"
+send "Yes,I am happy.\n"
+expect "why?"
+send "任性!\n"
+expect eof
+exit

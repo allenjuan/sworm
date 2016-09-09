@@ -1,0 +1,11 @@
+#!/bin/bash
+read -p 'begin=' a
+read -p 'end=' b
+#read -p 'weight=' cc
+declare -i i=0
+declare -i s=0
+while  ((i<=$b-$a));do
+let s=$a+i
+touch `printf 'file%02g' $s`
+let i++
+done

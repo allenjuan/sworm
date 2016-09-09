@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+def test(i):
+	print i 
+	return i
+a=100
+#t=test(a)
+test(a)
+print test(a)

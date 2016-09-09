@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+user='jerry'
+def test():
+	user='tom'
+	print "hello"
+	return user
+print user
+use=test()
+print use
